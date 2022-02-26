@@ -19,7 +19,7 @@ class Triangle {
      * @return false
      */
     private boolean isTriangle() {
-        return false;
+        return areAllSidesGreaterThanZero() && doesTriangleFollowsSumOfSidesProperty();
     }
 
     /**
