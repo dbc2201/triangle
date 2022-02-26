@@ -22,6 +22,11 @@ class Triangle {
         return false;
     }
 
+    /**
+     * Returns true if all sides of the triangle are greater than zero.
+     *
+     * @return false
+     */
     private boolean areAllSidesGreaterThanZero() {
         return false;
     }
