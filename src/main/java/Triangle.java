@@ -39,7 +39,9 @@ class Triangle {
      * @return Nothing is being returned.
      */
     private boolean doesTriangleFollowsSumOfSidesProperty() {
-        return false;
+        return Double.compare(side1 + side2, side3) > 0.0 &&
+                Double.compare(side2 + side3, side1) > 0.0 &&
+                Double.compare(side3 + side1, side2) > 0.0;
     }
 
     boolean isEquilateral() {
