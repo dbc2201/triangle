@@ -28,9 +28,9 @@ class Triangle {
      * @return false
      */
     private boolean areAllSidesGreaterThanZero() {
-        return Double.compare(side1, 0.0) > 0.0 &&
-                Double.compare(side2, 0.0) > 0.0 &&
-                Double.compare(side3, 0.0) > 0.0;
+        return Double.compare(side1, 0.0) > 0 &&
+                Double.compare(side2, 0.0) > 0 &&
+                Double.compare(side3, 0.0) > 0;
     }
 
     /**
@@ -39,17 +39,21 @@ class Triangle {
      * @return Nothing is being returned.
      */
     private boolean doesTriangleFollowsSumOfSidesProperty() {
-        return Double.compare(side1 + side2, side3) > 0.0 &&
-                Double.compare(side2 + side3, side1) > 0.0 &&
-                Double.compare(side3 + side1, side2) > 0.0;
+        return Double.compare(side1 + side2, side3) > 0 &&
+                Double.compare(side2 + side3, side1) > 0 &&
+                Double.compare(side3 + side1, side2) > 0;
     }
 
     boolean isEquilateral() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return Double.compare(side1, side2) == 0 &&
+                Double.compare(side2, side3) == 0 &&
+                Double.compare(side3, side1) == 0;
     }
 
     boolean isIsosceles() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return Double.compare(side1, side2) == 0 ||
+                Double.compare(side2, side3) == 0 ||
+                Double.compare(side3, side1) == 0;
     }
 
     boolean isScalene() {
