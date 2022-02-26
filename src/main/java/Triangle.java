@@ -57,7 +57,9 @@ class Triangle {
     }
 
     boolean isScalene() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return Double.compare(side1, side2) != 0 &&
+                Double.compare(side2, side3) != 0 &&
+                Double.compare(side3, side1) != 0;
     }
 
 }
