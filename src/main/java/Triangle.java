@@ -11,6 +11,10 @@ class Triangle {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
 
+    private boolean isTriangle() {
+        return false;
+    }
+
     boolean isEquilateral() {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
