@@ -28,7 +28,9 @@ class Triangle {
      * @return false
      */
     private boolean areAllSidesGreaterThanZero() {
-        return false;
+        return Double.compare(side1, 0.0) > 0.0 &&
+                Double.compare(side2, 0.0) > 0.0 &&
+                Double.compare(side3, 0.0) > 0.0;
     }
 
     /**
