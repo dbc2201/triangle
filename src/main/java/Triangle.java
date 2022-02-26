@@ -31,6 +31,11 @@ class Triangle {
         return false;
     }
 
+    /**
+     * It checks if the triangle follows the sum of sides property.
+     *
+     * @return Nothing is being returned.
+     */
     private boolean doesTriangleFollowsSumOfSidesProperty() {
         return false;
     }
