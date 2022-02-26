@@ -31,6 +31,10 @@ class Triangle {
         return false;
     }
 
+    private boolean doesTriangleFollowsSumOfSidesProperty() {
+        return false;
+    }
+
     boolean isEquilateral() {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
