@@ -27,9 +27,7 @@ public class TriangleTest {
 
     @Test
     public void trianglesWithNoSizeAreIllegal() {
-        assertThrows(
-                TriangleException.class,
-                () -> new Triangle(0, 0, 0));
+        assertThrows(TriangleException.class, () -> new Triangle(0, 0, 0));
     }
 
     @Test
@@ -76,23 +74,17 @@ public class TriangleTest {
 
     @Test
     public void firstTriangleInequalityViolation() {
-        assertThrows(
-                TriangleException.class,
-                () -> new Triangle(1, 1, 3));
+        assertThrows(TriangleException.class, () -> new Triangle(1, 1, 3));
     }
 
     @Test
     public void secondTriangleInequalityViolation() {
-        assertThrows(
-                TriangleException.class,
-                () -> new Triangle(1, 3, 1));
+        assertThrows(TriangleException.class, () -> new Triangle(1, 3, 1));
     }
 
     @Test
     public void thirdTriangleInequalityViolation() {
-        assertThrows(
-                TriangleException.class,
-                () -> new Triangle(3, 1, 1));
+        assertThrows(TriangleException.class, () -> new Triangle(3, 1, 1));
     }
 
     @Test
@@ -125,9 +117,7 @@ public class TriangleTest {
 
     @Test
     public void mayNotViolateTriangleInequality() {
-        assertThrows(
-                TriangleException.class,
-                () -> new Triangle(7, 3, 2));
+        assertThrows(TriangleException.class, () -> new Triangle(7, 3, 2));
     }
 
     @Test
