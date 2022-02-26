@@ -11,6 +11,11 @@ class Triangle {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
 
+    /**
+     * Returns true if the triangle is a triangle, false otherwise
+     *
+     * @return false
+     */
     private boolean isTriangle() {
         return false;
     }
